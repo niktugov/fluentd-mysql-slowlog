@@ -1,1 +1,1 @@
-Сбор mysql slow logs и передача их в kafka
+Collect mysql slowlogs and transfer it to apache kafka
