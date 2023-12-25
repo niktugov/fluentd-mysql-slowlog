@@ -1,0 +1,11 @@
+version: "3.9"
+services:
+  fluentd:
+    build: .
+    volumes:
+      - ./config:/fluentd/etc
+      - ${SLOWLOG}:/fluentd/log
+    restart: unless-stopped
+    env_file:
+      - .env
+
